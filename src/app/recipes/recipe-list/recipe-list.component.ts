@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Recipe from '../Recipe.model';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,6 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeListComponent implements OnInit {
 
+  recipes : Recipe[] = [
+    new Recipe("Era uma vez a Peppa", "Um hamburguer delicioso", "https://roastburger.com.br/wp-content/uploads/2020/04/xburge-t-170x170.jpg"),
+    new Recipe("Era uma vez a Peppa", "Um hamburguer delicioso", "https://roastburger.com.br/wp-content/uploads/2020/04/xburge-t-170x170.jpg"),
+    new Recipe("Era uma vez a Peppa", "Um hamburguer delicioso", "https://roastburger.com.br/wp-content/uploads/2020/04/xburge-t-170x170.jpg"),
+    new Recipe("Era uma vez a Peppa", "Um hamburguer delicioso", "https://roastburger.com.br/wp-content/uploads/2020/04/xburge-t-170x170.jpg"),
+    new Recipe("Era uma vez a Peppa", "Um hamburguer delicioso", "https://roastburger.com.br/wp-content/uploads/2020/04/xburge-t-170x170.jpg"),
+  ];
+  
   constructor() { }
 
   ngOnInit(): void {
