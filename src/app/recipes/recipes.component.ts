@@ -8,10 +8,15 @@ import Recipe from './Recipe.model';
 })
 export class RecipesComponent implements OnInit {
 
+  recipe : Recipe;
+
   constructor() { 
   }
 
   ngOnInit(): void {
   }
 
+  setRecipe(r : Recipe){
+    this.recipe = r;
+  }
 }
