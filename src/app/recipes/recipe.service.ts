@@ -7,6 +7,7 @@ import Recipe from './Recipe.model';
     providedIn: 'root'
 })
 export class RecipeService {
+  
 
     recipeSelected = new EventEmitter<Recipe>();
 
@@ -15,8 +16,8 @@ export class RecipeService {
          "Um hamburguer delicioso", 
          "https://roastburger.com.br/wp-content/uploads/2020/04/xburge-t-170x170.jpg",
          [new Ingredient("Teste", 1),new Ingredient("Teste2", 2)]),
-         new Recipe("Era uma vez a Peppa",
-         "Um hamburguer delicioso", 
+         new Recipe("teste",
+         "TESTE", 
          "https://roastburger.com.br/wp-content/uploads/2020/04/xburge-t-170x170.jpg",
          [new Ingredient("Teste", 1),new Ingredient("Teste2", 2)])
         ];
@@ -27,6 +28,10 @@ export class RecipeService {
 
       constructor(private shoppingservice : ShoppingListService){
 
+      }
+
+      getRecipesById(id: number): Recipe {
+        return this.recipes[id];
       }
 
       addIngredientsToShopping(ingredients: Ingredient[]){

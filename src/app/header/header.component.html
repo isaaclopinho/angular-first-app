@@ -6,15 +6,15 @@
 
         <div class="navbar-default">
             <ul class="nav navbar-nav">
-                <li><a routerLink="/recipes">Recipes</a></li>
-                <li><a  routerLink="/shopping-list">Shopping List</a></li>
+                <li routerLinkActive="active"><a routerLink="/recipes">Recipes</a></li>
+                <li routerLinkActive="active"><a  routerLink="/shopping-list">Shopping List</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown" ngbDropdown>
-                    <a href="#" class="dropdown-toggle" role="button" ngbDropdownToggle> Manage <span class="caret"></span></a>
+                    <a  class="dropdown-toggle" role="button" ngbDropdownToggle> Manage <span class="caret"></span></a>
                     <div class="ul dropdown-menu" ngbDropdownMenu>
-                        <li ngbDropdownItem><a href="#">Save data</a></li>
-                        <li ngbDropdownItem><a href="#">Fetch data</a></li>
+                        <li ngbDropdownItem><a>Save data</a></li>
+                        <li ngbDropdownItem><a>Fetch data</a></li>
                     </div>
                 </li>
             </ul>
