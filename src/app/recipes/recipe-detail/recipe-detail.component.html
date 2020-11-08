@@ -12,15 +12,15 @@
 
 <div class="row">
     <div class="col-xs-12">
-        <div class="btn-group">
+        <div class="btn-group" ngbDropdown>
 
-            <button type="button" class="btn btn-primary dropdown-toggle">
+            <button type="button" class="btn btn-primary dropdown-toggle" ngbDropdownToggle>
                 Manage Recipes <span class="caret"></span>
             </button>
-            <div class="ul dropdown-menu">
-                <li><a href="#">To Shopping List</a></li>
-                <li><a href="#">Edit Recipe</a></li>
-                <li><a href="#">Delete Recipe</a></li>
+            <div class="ul dropdown-menu" ngbDropdownMenu>
+                <li ngbDropdownItem><a href="#" >To Shopping List</a></li>
+                <li ngbDropdownItem><a href="#">Edit Recipe</a></li>
+                <li ngbDropdownItem><a href="#">Delete Recipe</a></li>
             </div>
         </div>
     </div>
