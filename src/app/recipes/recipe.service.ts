@@ -9,8 +9,6 @@ import Recipe from './Recipe.model';
 export class RecipeService {
   
 
-    recipeSelected = new EventEmitter<Recipe>();
-
     private recipes : Recipe[] = [
         new Recipe("Era uma vez a Peppa",
          "Um hamburguer delicioso", 
