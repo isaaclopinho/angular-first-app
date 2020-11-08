@@ -12,6 +12,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { FeatureRoutingModule } from './app-router.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
   imports: [
     BrowserModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    FeatureRoutingModule
   ],
   providers: [ShoppingListService],
   bootstrap: [AppComponent]
