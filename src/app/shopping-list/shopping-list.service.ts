@@ -1,9 +1,9 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.model';
 
-// @Injectable({
-//     providedIn: 'root'
-// })
+@Injectable({
+    providedIn: 'root'
+})
 export class ShoppingListService {
 
     ingredientsChanged = new EventEmitter<Ingredient[]>(); 
@@ -22,4 +22,9 @@ export class ShoppingListService {
           this.ingredients.push(ing);
           this.ingredientsChanged.emit(this.getIngredients());
       }
+
+      addIngredients2(ing : Ingredient[]){
+        this.ingredients.push(...ing);
+        this.ingredientsChanged.emit(this.getIngredients());
+    }
 }

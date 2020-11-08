@@ -18,7 +18,7 @@
                 Manage Recipes <span class="caret"></span>
             </button>
             <div class="ul dropdown-menu" ngbDropdownMenu>
-                <li ngbDropdownItem><a href="#" >To Shopping List</a></li>
+                <li ngbDropdownItem><a href="#" (click)="addIngredients()" >To Shopping List</a></li>
                 <li ngbDropdownItem><a href="#">Edit Recipe</a></li>
                 <li ngbDropdownItem><a href="#">Delete Recipe</a></li>
             </div>
@@ -28,12 +28,14 @@
 
 <div class="div row">
     <div class="div col-xs-12">
-        Description
+        {{recipe.description}}
     </div>
 </div>
 
 <div class="div row">
     <div class="div col-xs-12">
-        Ingredients
+        <div class="list-group">
+            <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">{{ingredient.name}}</li>
+        </div>
     </div>
 </div>
