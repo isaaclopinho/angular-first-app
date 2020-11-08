@@ -9,8 +9,5 @@ export class AppComponent {
   title = "Title";
   selected = 'recipes';
 
-  onNavigate(str : string){
-    this.selected = str;
-  }
 }
 
